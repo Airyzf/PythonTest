@@ -107,7 +107,7 @@ if __name__ == '__main__':
     print("=" * 50)
     word = input("Please input your word:\n")
 
-    dirpath = mkDir("resultscang")
+    dirpath = mkDir("tmp_img")
 
     urls = buildUrls(word)
     index = 0
