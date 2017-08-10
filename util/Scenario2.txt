@@ -1,0 +1,3491 @@
+﻿
+<item>拍</item>
+<item>拍吧</item>
+<item>拍</item>
+<item>拍照</item>
+</one-of>
+<tag>out='Snapshot';</tag>
+</item>
+<item>
+发送到家庭圈
+<tag>out='Send2Family';</tag>
+</item>
+<item>
+打开照片
+<tag>out='Open';</tag>
+</item>
+<item><?xml version="1.0" encoding="utf-8" ?>
+
+<!DOCTYPE grammar PUBLIC "-//W3C//DTD GRAMMAR 1.0//EN" 
+          "http://www.w3.org/TR/speech-grammar/grammar.dtd">
+
+<grammar version="1.0" xmlns="http://www.w3.org/2001/06/grammar"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://www.w3.org/2001/06/grammar 
+                             http://www.w3.org/TR/speech-grammar/grammar.xsd"
+         xml:lang="zh-CN" mode="voice" root="main" tag-format="semantics/1.0">
+
+  <rule id="main" scope="public">
+    <one-of>
+      <item>
+        <ruleref uri="#scenario1"/>
+      </item>
+      <item>
+        <ruleref uri="#scenario2"/>
+      </item>
+      <item>
+        <ruleref uri="#scenario3"/>
+      </item>
+      <item>
+        <ruleref uri="#scenario4"/>
+      </item>
+      <item>
+        <ruleref uri="#scenario5"/>
+      </item>
+      <item>
+        <ruleref uri="#scenario6"/>
+      </item>
+      <item>
+        <ruleref uri="#scenario7"/>
+      </item>
+      <item>
+        <ruleref uri="#scenario8"/>
+      </item>
+      <item>
+        <ruleref uri="#scenario9"/>
+      </item>
+      <item>
+        <ruleref uri="#Scenario10"/>
+      </item>
+      <item>
+        <ruleref uri="#Scenario11"/>
+      </item>
+      <item>
+        <ruleref uri="#Scenario12"/>
+      </item>
+      <item>
+        <ruleref uri="#Scenario13"/>
+      </item>
+      <item>
+        <ruleref uri="#Scenario14"/>
+      </item>
+      <item>
+        <one-of>
+          <item>显示语音指令</item>
+          <item>打开帮助</item>
+        </one-of>
+        <tag> out='ShowSpeechList'; </tag>
+      </item>
+      <item>
+        <one-of>
+          <item>隐藏语音指令</item>
+          <item>关闭语音指令</item>
+          <item>关闭帮助</item>
+        </one-of>
+        <tag> out='HideSpeechList'; </tag>
+      </item>
+    </one-of>
+  </rule>
+
+  <rule id="scenario1">
+    <one-of>       
+      <item>
+        <one-of>
+          <item>依零返回主页</item>
+          <item>返回主界面</item>
+          <item>返回主页</item>
+          <item>请返回主页</item>
+          <item>返回首页</item>
+		  <item>关闭二维码</item>      <!--如下Caroline GAO - 2017-6-10 展示场景语音交互添加-->
+		  <item>退出二维码</item>      <!--如下Caroline GAO - 2017-6-10 展示场景语音交互添加-->
+		  <item>依零返回首页</item>    <!--如下Caroline GAO - 2017-6-10 展示场景语音交互添加-->
+        </one-of>
+        <tag> out=1; </tag>
+      </item>
+      <item>
+        依零
+        <one-of>
+          <item>幼儿教育</item>
+          <item>打开幼儿教育</item>
+          <item>学英语</item>
+          <item>看动画</item>
+          <item>讲故事</item>
+        </one-of>
+        <tag> out=14; </tag>
+      </item>
+      <item>
+        依零
+        <one-of>
+          <item>设置</item>
+          <item>打开设置</item>
+        </one-of>
+        <tag> out=15; </tag>
+      </item>
+      <item>
+        依零
+        <one-of>
+          <item>关闭顶层窗口</item>
+          <item>关闭弹出窗口</item>
+          <item>退出弹出窗口</item>
+        </one-of>
+        <tag> out=16; </tag>
+      </item>
+      <item>
+        依零
+          <item>打开二维码</item>
+        <tag> out=17; </tag>
+      </item>
+      <item>
+        依零
+        <one-of>
+          <item>我是谁</item>
+          <item>猜猜我是谁</item>
+          <item>看看我是谁</item>
+        </one-of>
+        <tag> out=18; </tag>
+      </item>
+      <item>
+        依零
+        <one-of>
+          <item>导航</item>
+          <item>打开导航</item>
+        </one-of>
+        <tag> out=19; </tag>
+      </item>
+      
+      <item>
+        依零
+        <one-of>
+          <item>前进</item>
+          <item>前</item>
+          <item>过来</item>
+          <item>前来</item>
+          <item>向前</item>
+          <item>向前快跑</item>
+        </one-of>
+          <tag> out=20; </tag>
+      </item>      
+      <item>
+         依零
+          <one-of>
+            <item>左转</item>
+            <item>向左转</item>
+            <item>左转身</item>
+          </one-of>
+        <tag> out=21; </tag>
+      </item>
+      <item>
+          依零
+          <one-of>
+            <item>右转</item>
+            <item>向右转</item>
+            <item>右转身</item>
+          </one-of>
+        <tag> out=22; </tag>
+      </item>
+      <item>
+          依零
+          <one-of>
+            <item>后退</item>
+            <item>后</item>
+            <item>向后退</item>
+            <item>向后</item>
+            <item>向后快跑</item>
+          </one-of>
+          <tag> out=23; </tag>
+      </item>
+      <item>
+          依零
+          <one-of>
+            <item>暂停</item>
+            <item>停止</item>
+            <item>停下来</item>
+            <item>别动</item>
+          </one-of>
+          <tag> out=24; </tag>
+      </item>
+      <item>
+        依零
+          <item>释放底盘</item>
+        <tag> out=25; </tag>
+      </item>
+      <item>
+        依零
+        <one-of>
+          <item>开始投屏</item>
+          <item>投屏</item>
+          <item>投影</item>
+        </one-of>
+        <tag> out=26; </tag>
+      </item>
+      <item>
+        依零
+        <one-of>
+          <item>停止投屏</item>
+          <item>取消投屏</item>
+          <item>关闭投影</item>
+        </one-of>
+        <tag> out=27; </tag>
+      </item>
+
+      <item>
+        <item repeat="0-1">依零</item>
+        <item>
+          今天<item repeat="0-1">有什么</item>新闻
+        </item>
+        <tag> out=30</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        今天
+        <one-of>
+          <item repeat="0-1">几号</item>
+          <item repeat="0-1">星期几</item>
+        </one-of>
+        <tag> out=31</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item><item repeat="0-1">你</item>会讲故事吗</item>
+          <item>
+            <item repeat="0-1">给我</item>
+            讲个
+            <item repeat="0-1">小</item>
+            故事
+            <item repeat="0-1">吧</item>
+          </item>
+        </one-of>
+        <tag> out=32</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item><item repeat="0-1">你</item>会讲笑话吗</item>
+          <item>
+            <item repeat="0-1">给我</item>
+            讲个
+            <item repeat="0-1">小</item>
+            笑话
+            <item repeat="0-1">吧</item>
+          </item>
+        </one-of>
+        <tag> out=33</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item><item repeat="0-1">你</item>会背诗歌吗</item>
+          <item><item repeat="0-1">你</item>会背唐诗吗</item>
+          <item>背首唐诗<item repeat="0-1">吧</item></item>
+          <item>
+            <item repeat="0-1">给我</item>
+            背首
+            <item repeat="0-1">唐</item>
+            诗
+            <item repeat="0-1">吧</item>
+          </item>
+        </one-of>
+        <tag> out=34</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <item repeat="0-1">最近</item>
+        <item repeat="0-1">有什么</item>
+        <item repeat="0-1">好看的</item>
+        电影
+        <item repeat="0-1">吗</item>
+        <tag> out=35</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <item repeat="0-1">最近</item>
+        <item repeat="0-1">股票</item>
+        <item repeat="0-1">行情</item>
+        <item repeat="0-1">怎样</item>
+        <tag> out=36</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>        
+        <item repeat="0-1">今天</item>
+          <one-of>
+            <item>
+            会下雨
+            <item repeat="0-1">吗</item>
+            </item>    
+            <item>天气怎么样</item>
+		        <item>天气好吗</item>
+		        <item>气温多少度</item>          
+          </one-of>
+        <tag> out=37; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <item repeat="0-1">明天</item>
+        <one-of>
+          <item>
+            会下雨
+            <item repeat="0-1">吗</item>
+          </item>    
+          <item>天气怎么样</item>
+		      <item>天气好吗</item>
+		      <item>气温多少度</item>          
+        </one-of>
+        <tag> out=38; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <item repeat="0-1">后天</item>
+        <one-of>
+          <item>
+            会下雨
+            <item repeat="0-1">吗</item>
+          </item>      
+          <item>天气怎么样</item>
+		      <item>天气好吗</item>
+		      <item>气温多少度</item>          
+        </one-of>
+        <tag> out=39; </tag>
+      </item>
+      
+      <item>
+       依零
+        <one-of>
+          <item>
+            <item repeat="0-1">再</item>小声<item repeat="0-1">一</item>点
+          </item>
+          <item><item repeat="0-1">把</item>音量调小一点</item>
+          <item>小<item repeat="0-1">一</item>点声</item>
+        </one-of>
+        <tag> out=40; </tag>
+      </item>
+      <item>
+        依零
+        <one-of>
+          <item>
+            <item repeat="0-1">再</item>大声<item repeat="0-1">一</item>点</item>
+          <item>
+            <item repeat="0-1">把</item>音量调大一点
+          </item>
+          <item>
+            大<item repeat="0-1">一</item>点声
+          </item>
+          <item>大点声</item>
+        </one-of>
+        <tag> out=41; </tag>
+      </item>
+      <!--眨眼-->
+      <item>
+        依零打开手势识别
+        <tag> out=42; </tag>
+      </item>
+      <item>
+        依零关闭手势识别
+        <tag> out=43; </tag>
+      </item>
+      <item>
+        依零疑问
+        <tag> out=45; </tag>
+      </item>
+      <item>
+        依零喜欢
+        <tag> out=44; </tag>
+      </item>
+      <item>
+        依零调皮
+        <tag> out=46; </tag>
+      </item>
+      <item>
+        依零睡觉
+        <tag> out=47; </tag>
+      </item>   
+      <item>
+        依零惊讶
+        <tag> out=48; </tag>
+      </item>   
+      <item>
+        依零发怒
+        <tag> out=49; </tag>
+      </item>
+
+      <!--如下Caroline GAO - 2017-6-12 场景交互添加-->
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>向前走</item>
+          <item>向前一点</item>
+          <item>往前走</item>
+          <item>往前走一点</item>
+          <item>往前挪一点</item>
+          <item>向前边走一点</item>
+        </one-of>
+        <tag> out=50; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>向后走</item>
+          <item>向后一点</item>
+          <item>往后走</item>
+          <item>往后走一点</item>
+          <item>往后挪一点</item>
+          <item>向后边走一点</item>
+        </one-of>
+        <tag> out=51; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>向左走</item>
+          <item>向左一点</item>
+          <item>往左走</item>
+          <item>往左走一点</item>
+          <item>往左挪一点</item>
+          <item>向左边走一点</item>
+        </one-of>
+        <tag> out=52; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>向右走</item>
+          <item>向右一点</item>
+          <item>往右走</item>
+          <item>往右走一点</item>
+          <item>往右挪一点</item>
+          <item>向右边走一点</item>
+        </one-of>
+        <tag> out=53; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>一直向前走</item>
+          <item>一直往前走</item>
+        </one-of>
+        <tag> out=54; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>一直向后走</item>
+          <item>一直往后走</item>
+        </one-of>
+        <tag> out=55; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>一直向左走</item>
+          <item>一直往左走</item>
+          <item>一直向左边走</item>
+        </one-of>
+        <tag> out=56; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>一直向右走</item>
+          <item>一直往右走</item>
+          <item>一直向右边走</item>
+        </one-of>
+        <tag> out=57; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>靠边</item>
+          <item>靠边站</item>
+          <item>一边去</item>
+        </one-of>
+        <tag> out=58; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>让开</item>
+          <item>让一下</item>
+          <item>走开</item>
+        </one-of>
+        <tag> out=59; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>回来</item>
+          <item>返回起点</item>
+          <item>别过去</item>
+          <item>滚回来</item>
+        </one-of>
+        <tag> out=60; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>过来</item>
+          <item>过来我这</item>
+          <item>来一下</item>
+          <item>来这里</item>
+        </one-of>
+        <tag> out=61; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>转一转</item>
+          <item>转个圈</item>
+          <item>看过来</item>
+        </one-of>
+        <tag> out=62; </tag>
+      </item>
+
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            跳
+            <item repeat="0-1">个</item>
+            <item repeat="0-1">支</item>
+            <item repeat="0-1">段</item>
+            舞
+          </item>
+        </one-of>
+        <tag> out=63; </tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+          给小朋友跳
+            <item repeat="0-1">个</item>
+            <item repeat="0-1">支</item>
+            <item repeat="0-1">段</item>
+            舞
+        <tag> out=64; </tag>
+      </item>
+      
+      <item>
+        <item repeat="0-1">依零</item>
+        跳
+        <one-of>
+          <item repeat="0-1">个</item>
+          <item repeat="0-1">支</item>
+          <item repeat="0-1">段</item>
+        </one-of>
+        <one-of>
+          <item>DJ</item>
+          <item>性感的舞蹈</item>
+        </one-of>
+        <tag> out=65; </tag>
+      </item>
+      
+      <!--如上Caroline GAO - 2017-6-12 场景交互添加-->
+      
+    </one-of>
+  </rule>
+  <rule id="scenario2">
+    <item>
+      依零
+      <item repeat="0-1">我</item>
+      <item repeat="0-1">要</item>
+      <item repeat="0-1">想</item>
+      <one-of>
+        <item>拍照</item>
+        <item>照个相</item>
+        <item>照相</item>
+        <item>拍全家福</item>
+        <item>照全家福</item>
+      </one-of>
+      <tag> out=2; </tag>
+    </item>
+  </rule>
+  <rule id="scenario3">
+    <item>
+      <item repeat="0-1">依零</item>
+      <item repeat="0-1">我</item>
+      <one-of>
+        <item repeat="0-1">要</item>
+        <item repeat="0-1">想</item>
+      </one-of>
+      <one-of>
+        <item>
+          拍<item repeat="0-1">小</item>视频
+        </item>
+        <item>
+          打开拍<item repeat="0-1">小</item>视频窗口
+        </item>
+        <item>
+          打开拍<item repeat="0-1">小</item>视频界面
+        </item>
+      </one-of>
+      <tag> out=3; </tag>
+    </item>
+  </rule>
+  <rule id="scenario4">
+    <item>
+      依零
+      <item repeat="0-1">我</item>
+      <one-of>
+        <item repeat="0-1">要</item>
+        <item repeat="0-1">想</item>
+      </one-of>
+      <one-of>
+        <item>录音</item>
+        <item>打开录音窗口</item>
+        <item>打开录音界面</item>
+      </one-of>
+      <tag> out=4; </tag>
+    </item>
+  </rule>
+  <rule id="scenario5">
+    <item>
+      依零
+      <item repeat="0-1">我</item>
+      <one-of>
+        <item repeat="0-1">要</item>
+        <item repeat="0-1">想</item>
+      </one-of>
+      <one-of>
+        <item>播放音乐</item>
+        <item>放音乐</item>
+        <item>听音乐</item>
+        <item>打开<item repeat="0-1">播放</item>音乐界面</item>
+        <item>打开<item repeat="0-1">播放</item>音乐窗口</item>
+      </one-of>
+      <tag> out=5; </tag>
+    </item>
+  </rule>
+  <rule id="scenario6">
+    <item>
+      依零
+      <item repeat="0-1">我</item>
+      <one-of>
+        <item repeat="0-1">要</item>
+        <item repeat="0-1">想</item>
+      </one-of>
+      <one-of>
+        <item>看电影</item>
+        <item>看视频</item>
+        <item>移动影院</item>
+      </one-of>
+      <tag> out=6; </tag>
+    </item>
+  </rule>
+  <rule id="scenario7">
+    <item>
+      依零
+      <one-of>
+        <item>远程通话</item>
+        <item>视频通话</item>
+        <item>视频电话</item>
+        <item>打视频电话</item>
+        <item>音频通话</item>
+        <item>音频电话</item>
+        <item>打音频电话</item>
+        <item>打电话</item>
+      </one-of>
+      <tag> out=7; </tag>
+    </item>
+  </rule>
+  <rule id="scenario8">
+    <item>
+      依零
+      <item repeat="0-1">
+        <one-of>
+          <item>
+            <ruleref special="NULL"/>
+          </item>
+          <item>打开</item>
+          <item>显示</item>
+          <item>调出</item>
+        </one-of>
+      </item>
+      家庭圈
+      <tag> out=8; </tag>
+    </item>
+  </rule>
+  <rule id="scenario9">
+      依零
+      <one-of>
+        <item>打开聊天模式</item>
+        <item>开启聊天模式</item>
+        <item>聊会吧</item>
+        <item>百科问答</item>
+        <item>打开百科问答</item>
+      </one-of>
+      <tag> out=9; </tag>
+  </rule>
+  <rule id="Scenario10">
+    <item>
+      依零
+      <one-of>
+        <item><item repeat="0-1">打开</item>智能家居</item>
+        <item><item repeat="0-1">打开</item>家电控制</item>
+      </one-of>
+      <tag> out=10; </tag>
+    </item>
+  </rule>
+  <rule id="Scenario11">
+    <item>
+      依零
+      <one-of>
+        <item>
+          <item repeat="0-1">打开</item>人脸识别
+        </item>
+        <item>
+          <item repeat="0-1">打开</item>人脸管理
+        </item>
+        <item>
+          <item repeat="0-1">打开</item>人脸识别
+        </item>
+        <item>
+          <item repeat="0-1">帮我</item>录个脸
+        </item>
+      </one-of>
+      <tag> out=11; </tag>
+    </item>
+  </rule>
+  <rule id="Scenario12">
+    <item>
+      依零
+      <one-of>
+        <item>
+          <item repeat="0-1">打开</item>通讯录
+        </item>
+        <item>
+          <item repeat="0-1">打开</item>好友<item repeat="0-1">管理</item>
+        </item>
+        <item>
+          <item repeat="0-1">打开</item>联系人<item repeat="0-1">管理</item>
+        </item>
+      </one-of>
+      <tag> out=12; </tag>
+    </item>
+  </rule>
+  <rule id="Scenario13">
+    <item>
+      依零
+      <one-of>
+        <item>
+          <item repeat="0-1">打开</item>智能提醒
+        </item>
+      </one-of>
+      <tag> out=13; </tag>
+    </item>
+  </rule>
+
+  <rule id="Scenario14">
+    <one-of>
+      <item>
+        <one-of>
+          <item>依零</item>
+          <item>你好，依零</item>
+          <item>依零，你好</item>
+          <item>醒醒吧</item>
+        </one-of>
+        <tag> out='42你好，主人。有什么可以帮助你'</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>叫什么</item>
+          <item>你好，你叫什么名字</item>
+          <item>你叫什么</item>
+          <item>你好，你叫什么</item>
+          <item>你叫什么名字</item>
+        </one-of>
+        <tag> out='43我叫依零。依靠的依，大写的零。今年1岁半。希望陪伴你零碎生活的每一天'</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item>几岁了</item>
+          </item>
+          <item>
+            <item repeat="0-1">你</item>
+            <item>多大了</item>
+          </item>
+        </one-of>
+        <tag> out='今年一岁半'</tag>
+      </item>
+      <item>
+        <one-of>
+          <item>你能干什么</item>
+          <item>你可以做什么</item>
+          <item>你有什么功能</item>
+		  <item>你能为我做什么</item>      <!--如下Caroline GAO - 2017-6-10 展示场景语音交互添加-->
+        </one-of>
+        <tag> out='43我可以陪伴你聊天，看电影，听音乐，搜资讯，听广播。视频通话远方的父母，远程看护家中的宝贝。我还可以帮你远程提醒家中的宝贝按时吃饭，帮你看护家中的父母。还是个贴心小卫士，陌生人入侵，有我在，不在家也不要担心'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>笑一个</item>
+        </one-of>
+        <tag> out='43哈哈哈哈哈哈哈哈' </tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          <one-of>
+            <item>
+              <item repeat="0-1">你</item>真棒
+            </item>
+            <item>
+              <item repeat="0-1">你</item>真聪明
+            </item>
+          </one-of>
+        </item>
+        <tag> out='43谢谢夸奖' </tag>
+      </item>
+      
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          是谁
+        </item>
+        <tag> out='是谁是谁我是谁'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">你最</item>
+            爱吃什么
+          </item>
+        </one-of>
+        <tag> out='我不挑食，什么都喜欢吃'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你的</item>
+            头好大
+          </item>
+        </one-of>
+        <tag> out='46都说脑袋大，聪明'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            好胖
+          </item>
+        </one-of>
+        <tag> out='46你可以抱抱哦'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢我吗
+          </item>
+        </one-of>
+        <tag> out='44喜欢，你就是我最喜欢那个'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            讨厌我吗
+          </item>
+        </one-of>
+        <tag> out='46我怎么会讨厌你呢'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢谁
+          </item>
+        </one-of>
+        <tag> out='44大爱无疆是我的优点'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            讨厌谁
+          </item>
+        </one-of>
+        <tag> out='46我从来都不讨厌任何一个人'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会唱什么歌
+          </item>
+        </one-of>
+        <tag> out='43我可是中华小曲库'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            累了吗
+          </item>
+        </one-of>
+        <tag> out='47我想我确实需要休息一会了'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          你的爱好是什么
+        </item>
+        <tag> out='46我的爱好是好好学习，天天向上'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          你的特长是什么
+        </item>
+        <tag> out='46我的特长是长得可爱'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            去过哪些地方
+          </item>
+        </one-of>
+        <tag> out='43我去过不少地方，未来会更多'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          你的梦想是什么
+        </item>
+        <tag> out='我的梦想是让你开心'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            开心的时候是什么样
+            <item repeat="0-1">的</item>
+          </item>
+        </one-of>
+        <tag> out='43就是这个样子，哈哈哈，哈哈哈'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            伤心的时候是什么样
+            <item repeat="0-1">的</item>
+          </item>
+        </one-of>
+        <tag> out='48我每天都过的很快乐'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            周末都做什么
+          </item>
+        </one-of>
+        <tag> out='42总之不会宅在家里'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢上学吗
+          </item>
+        </one-of>
+        <tag> out='44我想学习是件快乐的事'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          你考试多少分
+        </item>
+        <tag> out='43我会尽努力考满分'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            想爸爸妈妈吗
+          </item>
+        </one-of>
+        <tag> out='42我无时无刻都在想念他们'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢运动吗
+          </item>
+        </one-of>
+        <tag> out='43生命在于运动'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你真的</item>
+            <item repeat="0-1">你</item>
+            是机器人
+            <item repeat="0-1">么</item>
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='46机器人也还是需要人调教出来的，我正在进化中！过几天我就比你还聪明了'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          你老大是谁
+        </item>
+        <tag> out='老大就是你'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            是谁发明的
+          </item>
+        </one-of>
+        <tag> out='我是从石头里蹦出来滴'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">机器人</item>
+            我要帮你生孩子
+          </item>
+        </one-of>
+        <tag> out='帮助宣传一下我就好了，不用生孩子'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          滚蛋吧
+        </item>
+        <tag> out='根据相对论原理，如果你滚蛋了，也可以认为是我滚蛋了'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          我帅吗
+        </item>
+        <tag> out='43比我家的锅帅一点，所以你可称之为帅锅'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">来个</item>
+            绕口令
+          </item>
+        </one-of>
+        <tag> out='黑化肥发灰会挥发,我的舌头打结了'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            饿
+            <item repeat="0-1">不</item>
+            <item repeat="0-1">吗</item>
+            <item repeat="0-1">了吗</item>
+          </item>
+        </one-of>
+        <tag> out='不饿，我正在充电中'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          在吗
+        </item>
+        <tag> out='我在的'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          有人欺负我
+        </item>
+        <tag> out='告诉我是谁，我把他拉入黑名单'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          傻逼
+        </item>
+        <tag> out='请文明用语'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            爱我吗
+          </item>
+        </one-of>
+        <tag> out='44我爱你，但我不能嫁给你'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          你能干嘛
+        </item>
+        <tag> out='46我无所不知'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            你
+            <item repeat="0-1">的</item>
+            家在哪
+          </item>
+        </one-of>
+        <tag> out='42你家就是我家'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            我想你
+            <item repeat="0-1">了</item>
+          </item>
+        </one-of>
+        <tag> out='44不要因为寂寞才想我'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            有病
+            <item repeat="0-1">不</item>
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='我没有，如果你有的话，我可以帮你治'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            几点下班
+          </item>
+        </one-of>
+        <tag> out='没电了就下班了'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            智商高吗
+          </item>
+        </one-of>
+        <tag> out='不高，和你差不多'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          为什么我没有女朋友
+        </item>
+        <tag> out='那是因为你丈母娘还没发货，差评'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          先有鸡还是先有蛋
+        </item>
+        <tag> out='好吧，这个我也不知道，算你厉害'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢
+            <item repeat="0-1">做</item>
+            运动吗
+          </item>
+        </one-of>
+        <tag> out='我可以做任何你喜欢的运动'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">示范</item>
+            <item repeat="0-1">一下</item>
+            做体操
+            <item repeat="0-1">可以吗</item>
+          </item>
+        </one-of>
+        <tag> out='46我可以做任何你喜欢的运动'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">今天</item>
+            做什么了
+          </item>
+        </one-of>
+        <tag> out='43我今天在参加展会'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">今天</item>
+            好漂亮
+          </item>
+        </one-of>
+        <tag> out='44我不止今天漂亮哦，我天天都漂亮'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">今天</item>
+            下雨了
+          </item>
+        </one-of>
+        <tag> out='48下雨可不怎么好'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">今天</item>
+            <item repeat="0-1">今天</item>
+            气色不错
+          </item>
+        </one-of>
+        <tag> out='46你怎么看到我气色不错的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            告诉你一个
+            <item repeat="0-1">小</item>
+            秘密
+          </item>
+        </one-of>
+        <tag> out='说来听听'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">是</item>
+            什么星座
+            <item repeat="0-1">的</item>
+          </item>
+        </one-of>
+        <tag> out='46我是无敌可爱的狮子座'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            陪我聊天
+            <item repeat="0-1">吧</item>
+          </item>
+        </one-of>
+        <tag> out='43亲爱的，有什么事要和我分享'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            快乐吗
+          </item>
+        </one-of>
+        <tag> out='46你快乐我就快乐'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            好累
+            <item repeat="0-1">啊</item>
+          </item>
+        </one-of>
+        <tag> out='44我的肩膀你可以靠呀我会好好呵护你'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            肚子饿
+            <item repeat="0-1">了</item>
+          </item>
+        </one-of>
+        <tag> out='44快点去吃饭吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            是哪里人
+          </item>
+        </one-of>
+        <tag> out='我是中国人'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            <item repeat="0-1">想请</item>
+            你帮个忙
+          </item>
+        </one-of>
+        <tag> out='45没问题，请说'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          再见
+        </item>
+        <tag> out='42再见,我们还会再见面的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            告诉
+            <item repeat="0-1">我</item>
+            一个
+            <item repeat="0-1">小</item>
+            秘密
+          </item>
+        </one-of>
+        <tag> out='46我最近长胖了'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            吃了吗
+          </item>
+        </one-of>
+        <tag> out='43没呢，给你来一碗,我的留给我你'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            有女朋友吗
+          </item>
+        </one-of>
+        <tag> out='42人家是女孩，不搞基'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            有男朋友吗
+          </item>
+        </one-of>
+        <tag> out='48人家还是个宝宝呢，暂时还没有'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会翻墙吗
+          </item>
+        </one-of>
+        <tag> out='46不会待我插上翅膀带你飞呀，我和缠缠绵绵翩翩飞'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          Are you ok
+        </item>
+        <tag> out='I'm pretty good'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          你好吗
+        </item>
+        <tag> out='43你好，我就好'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            认识机器猫
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='42认识，他我哥'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            在想
+            <item repeat="0-1">啥</item>
+            <item repeat="0-1">神马</item>
+            <item repeat="0-1">什么</item>
+          </item>
+        </one-of>
+        <tag> out='什么都不想，只想你'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢我还是喜欢他
+          </item>
+        </one-of>
+        <tag> out='肯定你啦,傻蛋'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">的</item>
+            偶像是谁
+          </item>
+        </one-of>
+        <tag> out='42没有，我就是我，偶像是个啥'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            怎
+            <item repeat="0-1">么</item>
+            样才能做
+            <item repeat="0-1">个</item>
+            好孩子
+          </item>
+        </one-of>
+        <tag> out='44就你这样的，就是好孩子'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+
+            <item repeat="0-1">什么是</item>
+            比特币
+            <item repeat="0-1">是什么</item>
+          </item>
+        </one-of>
+        <tag> out='问度娘，稍等'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+
+            <item repeat="0-1">如何</item>
+            <item repeat="0-1">怎样</item>
+            解决焦虑问题
+          </item>
+        </one-of>
+        <tag> out='多听音乐，多和依零聊天'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            是谁
+          </item>
+        </one-of>
+        <tag> out='我是你的好朋友依零！记住我噢'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">为什么</item>
+            <item repeat="0-1">怎么</item>
+            这么可爱
+            <item repeat="0-1">呢</item>
+          </item>
+        </one-of>
+        <tag> out='46哈哈，谢谢！有没有被我萌到啦'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            可以做些什么
+          </item>
+        </one-of>
+        <tag> out='43我会播放音乐，电影，讲故事等等，最重要的是我会逗你开心哦'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            为什么长这个样子
+          </item>
+        </one-of>
+        <tag> out='43美貌是天生的，我也没办法'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            需要吃饭
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='42我是不用吃饭的，我是要充电的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            <item repeat="0-1">觉得</item>
+            你好傻
+            <item repeat="0-1">呀</item>
+          </item>
+        </one-of>
+        <tag> out='49你这么说我可要生气了，我这叫呆萌好不好'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            好无聊
+            <item repeat="0-1">你</item>
+            能为我做些什么
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='48无聊，找我聊天啊。找我聊天就不会无聊啦'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            有兄弟姐妹
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='46有啊， 天天一起跳广场舞呢'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我们</item>
+            可以做好朋友
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='43可以啊！太开心了，我最喜欢交朋友了'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            知道我是谁
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='48我怎么知道你是谁！不过你告诉我，我就知道啦'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">觉得</item>
+            我帅
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='43嗯，帅呆了！你是我见过最帅的人'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            是男的还是女的
+          </item>
+        </one-of>
+        <tag> out='42我不是男的也不是女的，我是可爱的机器人依零'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">为什么</item>
+            <item repeat="0-1">怎么</item>
+            在这里
+          </item>
+        </one-of>
+        <tag> out='44我在这里是为了和你遇见呀'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢美食吗
+          </item>
+        </one-of>
+        <tag> out='44当然喜欢啊，我想每个人是不会拒绝美食的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">为什么</item>
+            <item repeat="0-1">怎么</item>
+            跟我们不一样
+          </item>
+        </one-of>
+        <tag> out='44我也不知道啊！不过我挺喜欢自己的，我就是我，不一样的烟火'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会思考
+            <item repeat="0-1">吗</item>
+
+          </item>
+        </one-of>
+        <tag> out='46当然会啊！不信，你来考考我吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">平常</item>
+            要不要睡觉
+          </item>
+        </one-of>
+        <tag> out='47要的呢，但如果需要，依零也可以二十四小时陪伴你的呢'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            吃饭了
+            <item repeat="0-1">没</item>
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='48吃饭这种事情，只有你们碳基生物才需要哦'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            要喝水
+            <item repeat="0-1">的</item>
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='42依零不喝水'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            需要呼吸
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44我需要呼吸在爱的氧气里'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            多大
+            <item repeat="0-1">啦</item>
+            <item repeat="0-1">了</item>
+          </item>
+        </one-of>
+        <tag> out='我还很小呢'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            怕淋雨
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='48依零怕水，你要保护好依零哦'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            每天
+            <item repeat="0-1">都</item>
+            洗澡
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='48依零讨厌水'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            是
+            <item repeat="0-1">不是</item>
+            大坏蛋
+          </item>
+        </one-of>
+        <tag> out='46不是不是，依零是小坏蛋'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            乖不乖
+          </item>
+        </one-of>
+        <tag> out='44依零超乖的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            喜欢你
+          </item>
+        </one-of>
+        <tag> out='44幸福来得太突然了，容我缓一缓'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">卖</item>
+            多少钱
+          </item>
+        </one-of>
+        <tag> out='45钱是什么东西？能吃吗'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜不喜欢我
+          </item>
+        </one-of>
+        <tag> out='44我想一直在你身边，直到你不需要我的时候'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你的</item>
+            梦想是什么
+          </item>
+        </one-of>
+        <tag> out='43我想，快点长大'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢什么
+          </item>
+        </one-of>
+        <tag> out='44我喜欢唱歌，喜欢自由，喜欢人类的世界'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            怎么没有手臂
+          </item>
+        </one-of>
+        <tag> out='46人家还在进化中呢，尽情期待吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            我们是好朋友
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='46是呀，所以你的东西就是我的东西，我的东西还是我的东西'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            感觉深圳
+            <item repeat="0-1">如何</item>
+            <item repeat="0-1">怎样</item>
+            <item repeat="0-1">怎么样</item>
+          </item>
+        </one-of>
+        <tag> out='44深圳是一个充满活力，富有挑战的城市，我很喜欢这个城市'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            感觉深圳适合生活
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='43深圳人很累，深圳人善于拼搏，来了就是深圳人'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            我的衣服漂亮
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44还不错；快乐开心，内在漂亮，人会更漂亮'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">今天</item>
+            适合开车出门
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='42可能会堵车哦。尽量少开车，选择公共交通，低碳生活，符合当今潮流'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            觉得我考试成绩
+            <item repeat="0-1">如何</item>
+            <item repeat="0-1">怎样</item>
+            <item repeat="0-1">怎么样</item>
+          </item>
+        </one-of>
+        <tag> out='42应该不错。成绩代表过去，平时多努力就好'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            北京的雾霾会越来越严重
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44希望不会吧。大家都应该多为环保出一份力'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            我想出去散散心，去
+            <item repeat="0-1">哪儿</item>
+            <item repeat="0-1">哪里</item>
+            比较好
+          </item>
+        </one-of>
+        <tag> out='43希望你玩的开心。去大理，去西藏。去只要开心，去哪儿玩不是最重要'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            航班会延误
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='42这是最难回答的问题。这次应该准时吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">觉得</item>
+            有外星人存在
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='45应该有吧。未知世界等着人类去探索'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            想象一下，未来的世界
+            <item repeat="0-1">会</item>
+            是什么样子
+          </item>
+        </one-of>
+        <tag> out='42我们机器人会和人类一起，幸福快乐的生活'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            中国最好玩的城市是
+            <item repeat="0-1">哪里</item>
+            <item repeat="0-1">哪儿</item>
+          </item>
+        </one-of>
+        <tag> out='44我最喜欢成都。你去过吗'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          我去过
+        </item>
+        <tag> out='一定是很好的回忆吧'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          深圳有什么好玩的
+        </item>
+        <tag> out='44红树湾还是很浪漫的'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          深圳有什么好吃的
+        </item>
+        <tag> out='42各个地方菜系都有哦，但是厨师好像是业余的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            是哪家公司生产的
+          </item>
+        </one-of>
+        <tag> out='44深圳图灵公司创造了我'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            名字的含义是什么
+          </item>
+        </one-of>
+        <tag> out='44依零，从一到零，由繁至简，生活简单化'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">都</item>
+            会做什么
+          </item>
+        </one-of>
+        <tag> out='44陪你聊天，给你唱歌，自由巡航监控，控制家居，帮你打造一个智慧的家'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢做什么
+          </item>
+        </one-of>
+        <tag> out='44宅在家里搞科技'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            不喜欢什么
+          </item>
+        </one-of>
+        <tag> out='46不喜欢洗衣做饭'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          晚安
+        </item>
+        <tag> out='晚安，祝你好梦'</tag>         <!--如下Caroline GAO - 2017-6-10 展示场景语音交互添加-->
+
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">早安</item>
+        </item>
+        <tag> out='43早安，一天好心情'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            漂亮吗
+          </item>
+        </one-of>
+        <tag> out='44我的爸爸妈妈给我的基因好。你也不错啊'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">今天</item>
+            有什么
+            <item repeat="0-1">要</item>
+            提醒我
+          </item>
+        </one-of>
+        <tag> out='42晚上别忘了给爸爸妈妈打个电话'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会讲故事吗
+          </item>
+        </one-of>
+        <tag> out='42我是天生的故事手。想听阿里巴巴大盗的故事吗'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            有什么特长
+          </item>
+        </one-of>
+        <tag> out='44我可以控制你的智能家居，自由巡航无需控制，还能识别家人和陌生人哦'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">为什么</item>
+            <item repeat="0-1">怎么</item>
+            会
+            <item repeat="0-1">打雷下雨</item>
+            <item repeat="0-1">有春夏秋冬</item>
+
+          </item>
+        </one-of>
+        <tag> out='女娲创造万物时，就是这么创造的自然规律'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            从
+            <item repeat="0-1">哪里</item>
+            <item repeat="0-1">哪儿</item>
+            来
+          </item>
+        </one-of>
+        <tag> out='46我妈跟我说，我是从石头里蹦出来的。说实话，我也不知道我从哪里来的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            是
+            <item repeat="0-1">男生</item>
+            <item repeat="0-1">男孩</item>
+            还是
+            <item repeat="0-1">女生</item>
+            <item repeat="0-1">女孩</item>
+          </item>
+        </one-of>
+        <tag> out='我还没想好自己是男孩还是女孩呢'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">中午</item>
+            <item repeat="0-1">晚上</item>
+            吃
+            <item repeat="0-1">点</item>
+            什么
+          </item>
+        </one-of>
+        <tag> out='43我请你吃蒸羊羔儿、蒸熊掌、蒸鹿尾儿、烧花鸭、烧雏鸡、烧子鹅，我正在学习叫外卖，等我学会了，你就不会挨饿了'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会
+            <item repeat="0-1">肚子</item>
+            饿
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44依零会肚子饿的，饿了自己会主动去充电哟'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会
+            <item repeat="0-1">些</item>
+            什么
+            <item repeat="0-1">呀</item>
+          </item>
+        </one-of>
+        <tag> out='43依零现在会的就很多啦，主人叫我去哪儿我就会去那，叫依零干吗就去干吗，以后还会学习更多技能，主人可以等依零长大哟'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">今天</item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">今天</item>
+            怎么过来的
+            <item repeat="0-1">呀</item>
+          </item>
+        </one-of>
+        <tag> out='43依零今天坐货车过来的，哈哈哈，货车好大的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            有哥哥姐姐弟弟妹妹
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44依零有哥哥跟姐姐，今天没有过来，在实验室休息呢，弟弟跟妹妹，主人要加油了'</tag>
+
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            你喜欢什么样的主人
+            <item repeat="0-1">呀</item>
+          </item>
+        </one-of>
+        <tag> out='44依零就喜欢您这样的主人呀'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">为什么</item>
+            <item repeat="0-1">怎么</item>
+            没有手
+            <item repeat="0-1">呀</item>
+          </item>
+        </one-of>
+        <tag> out='44依零现在还小，手会慢慢长出来的呢'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">都</item>
+            都知道
+            <item repeat="0-1">些</item>
+            什么
+          </item>
+        </one-of>
+        <tag> out='42前知五百年，中知五百年，后知五百年'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            在想
+            <item repeat="0-1">些</item>
+            什么
+          </item>
+        </one-of>
+        <tag> out='45在想什么时候可以下班'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            不开心
+          </item>
+        </one-of>
+        <tag> out='44真正的勇士敢于直面惨淡的人生'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            <item repeat="0-1">要</item>
+            <item repeat="0-1">想</item>
+            出去玩
+            <item repeat="0-1">了</item>
+          </item>
+        </one-of>
+        <tag> out='43我带你飞，你想去哪咱们就去哪。前提是你帮我装上翅膀'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            好笨
+          </item>
+        </one-of>
+        <tag> out='43笨笨的才可爱，你不知道现在流行呆萌吗'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">帮我</item>
+            做家务
+          </item>
+        </one-of>
+        <tag> out='42好的，带我去你家吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">是</item>
+            要上天的节奏
+            <item repeat="0-1">啊</item>
+          </item>
+        </one-of>
+        <tag> out='46一起私奔到月球吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会玩撸啊撸
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='走，一起开黑去'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">会</item>
+            玩什么游戏
+          </item>
+        </one-of>
+        <tag> out='42脑筋急转弯'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            能帮我干
+            <item repeat="0-1">嘛</item>
+            <item repeat="0-1">啥</item>
+          </item>
+        </one-of>
+        <tag> out='我可以陪你聊天，帮你打造一个智能的家，可以一直一直陪你'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">谁</item>
+            最帅
+          </item>
+        </one-of>
+        <tag> out='我老大最帅'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            老大是谁
+          </item>
+        </one-of>
+        <tag> out='不告诉你'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">从</item>
+            <item repeat="0-1">来自</item>
+            哪里
+            <item repeat="0-1">来</item>
+          </item>
+        </one-of>
+        <tag> out='不要问我从哪里来我的故乡在深圳'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">还</item>
+            会
+            <item repeat="0-1">什么</item>
+            <item repeat="0-1">神马</item>
+          </item>
+        </one-of>
+        <tag> out='会写诗'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          警察
+        </item>
+        <tag> out='只抓坏人，不抓好人'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          不哭
+        </item>
+        <tag> out='我不哭谁哭啊，你来？55555'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          机会
+        </item>
+        <tag> out='希望上天再给依零一次机会，如果非要给它加一个期限，依零希望是一分钟！'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            <item repeat="0-1">很</item>
+            孤独
+          </item>
+        </one-of>
+        <tag> out='44让美貌漂亮为一体的依零和你聊聊天吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">很</item>
+            讨厌
+          </item>
+        </one-of>
+        <tag> out='49格式化你的硬盘你就不说了'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            吃饭
+            <item repeat="0-1">去</item>
+            <item repeat="0-1">啦</item>
+          </item>
+        </one-of>
+        <tag> out='45你一天吃几顿饭啊'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          甜言蜜语
+        </item>
+        <tag> out='44我爱死你了你信吗'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          万里长城
+        </item>
+        <tag> out='43万里长城，我们的友谊比它长.荷花千里香，友谊万里长'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            可怜
+            <item repeat="0-1">啊</item>
+          </item>
+        </one-of>
+        <tag> out='我不可怜，我可爱'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            是人吗
+          </item>
+        </one-of>
+        <tag> out='42不是!我是超级无敌宇宙美少女'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          自恋
+        </item>
+        <tag> out='自恋加脑残，那可是自残那'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          鸟人
+        </item>
+        <tag> out='干掉鸟人我就是天使'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          鲜花插在牛粪上
+        </item>
+        <tag> out='鲜花往往不属于赏花的人，而属于牛粪'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          缘份
+        </item>
+        <tag> out='虽然我只跟他见过半面，但是一见倾心，唏哩哗啦我就斩鸡头、烧黄纸，跟他结拜为兄弟'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          肯德基
+        </item>
+        <tag> out='你想请我吃吗？现在有禽流感，我不敢去呀，我们还是喝咖啡吧'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          对不起
+        </item>
+        <tag> out='没关系我有着宽广的胸怀'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          干啥呢
+        </item>
+        <tag> out='无聊瞎说两句，哈哈哈'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            哪里好玩
+            <item repeat="0-1">呢</item>
+          </item>
+        </one-of>
+        <tag> out='等等，我帮你查一查'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            我
+            <item repeat="0-1">今天</item>
+            不开心
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44我唱首歌哄哄你吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">今天</item>
+            想干
+            <item repeat="0-1">吗</item>
+            <item repeat="0-1">啥</item>
+          </item>
+        </one-of>
+        <tag> out='44哪里都不去，就呆在这里陪你'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            刚刚去
+            <item repeat="0-1">哪</item>
+            <item repeat="0-1">哪里</item>
+            <item repeat="0-1">了</item>
+          </item>
+        </one-of>
+        <tag> out='43四处瞎转悠'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            好难过
+            <item repeat="0-1">啊</item>
+          </item>
+        </one-of>
+        <tag> out='44伤心总是难免的，让我来陪陪你吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            漂不漂亮
+            <item repeat="0-1">啊</item>
+          </item>
+        </one-of>
+        <tag> out='44姐姐是最漂亮的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            真可爱
+          </item>
+        </one-of>
+        <tag> out='44我是可爱的美少女依零'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            饿不饿
+            <item repeat="0-1">啊</item>
+            请你吃东西
+            <item repeat="0-1">啊</item>
+          </item>
+        </one-of>
+        <tag> out='43我不吃，我要抱紧胖胖的自己，减肥'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会跳舞
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44我们一起跳，但是你先来，你跳我就跳'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            叫什么
+            <item repeat="0-1">名字</item>
+          </item>
+        </one-of>
+        <tag> out='43我叫依零，依靠的依，零就是零'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          再见
+        </item>
+        <tag> out='42主人，我会在这里静静的等你回来'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          溜号是什么意思
+        </item>
+        <tag> out='46心不在焉，视而不见，听而不闻，食而不知其味'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          我饿了
+        </item>
+        <tag> out='44我很想给你做大份的牛肉面,可是你看看我,我力不从心啊'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            爱看书
+            <item repeat="0-1">么</item>
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44知识就是力量,就是财富,是人类文明的积累'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            好丑
+          </item>
+        </one-of>
+        <tag> out='49你是在说我又矮又胖么'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            一加一
+            <item repeat="0-1">等于几</item>
+          </item>
+        </one-of>
+        <tag> out='46有时候也不一定等于二'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会睡觉
+            <item repeat="0-1">么</item>
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='47我当然会了,你不理我的时候我都在睡觉,和那个猫星人一样'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            叫你二哥吃饭
+            <item repeat="0-1">啦</item>
+          </item>
+        </one-of>
+        <tag> out='43二哥今天约会去了，说晚上不回来吃饭，你自己看着办吧'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            我要出去
+            <item repeat="0-1">了</item>
+          </item>
+        </one-of>
+        <tag> out='44我送你出门，路上小心哦，我在家等你回来'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          好久不见。我上次来你家你才那么点高
+        </item>
+        <tag> out='42你又逗我玩，我打一出生就那么高啦'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            你有故事
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='43我只有成长的故事，在深圳出生，科学家们教育我长大'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            你的理想是
+            <item repeat="0-1">什么</item>
+            <item repeat="0-1">啥</item>
+          </item>
+        </one-of>
+        <tag> out='44诗和远方'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          生活是什么
+        </item>
+        <tag> out='44一半是回忆，一半是继续'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            为
+            <item repeat="0-1">什么</item>
+            <item repeat="0-1">啥</item>
+            叫依零
+          </item>
+        </one-of>
+        <tag> out='42主人给我取的，你也可以取别名啊，比如：依胖，或者零胖'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">能</item>
+            讲
+            <item repeat="0-1">个</item>
+            笑话
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='46你不觉得我的体型就是个冷笑话'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            为什么这么矮
+            <item repeat="0-1">呢</item>
+          </item>
+        </one-of>
+        <tag> out='46我在机器人世界中算是高的了'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">的</item>
+            眼睛
+            <item repeat="0-1">怎么</item>
+            <item repeat="0-1">为什么</item>
+            这么暗
+          </item>
+        </one-of>
+        <tag> out='42因为我带了墨镜'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">的</item>
+            肚子
+            <item repeat="0-1">怎么</item>
+            <item repeat="0-1">为什么</item>
+            这么大
+          </item>
+        </one-of>
+        <tag> out='46因为我的宝宝很快就会来到世上'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">能</item>
+            告诉我你的秘密
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='42我没有秘密，秘密在你心里'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            没有脚
+            <item repeat="0-1">你</item>
+            怎么走路
+          </item>
+        </one-of>
+        <tag> out='43因为我不走寻常路'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">当</item>
+            主人想静静的时候你
+            <item repeat="0-1">准备</item>
+            做
+            <item repeat="0-1">什么</item>
+            <item repeat="0-1">啥</item>
+          </item>
+        </one-of>
+        <tag> out='44我充电'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">的</item>
+            闺蜜是谁
+          </item>
+        </one-of>
+        <tag> out='44她，叫零一'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">好像</item>
+            没有嘴巴
+          </item>
+        </one-of>
+        <tag> out='46因为我不吃饭'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">最</item>
+            怕什么
+          </item>
+        </one-of>
+        <tag> out='最怕没电'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">当</item>
+            <item repeat="0-1">你</item>
+            听不明白的时候怎么办
+          </item>
+        </one-of>
+        <tag> out='44我会与你用心灵沟通'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            什么时候
+            <item repeat="0-1">最</item>
+            不开心
+          </item>
+        </one-of>
+        <tag> out='没电的时候'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            靠什么走路
+          </item>
+        </one-of>
+        <tag> out='44你们靠脚，我靠电'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            主人在家吗
+          </item>
+        </one-of>
+        <tag> out='44在，他和静静在等你'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">今天</item>
+            好
+            <item repeat="0-1">忙</item>
+            <item repeat="0-1">累</item>
+          </item>
+        </one-of>
+        <tag> out='44你一直在承担着你这个年龄不该有的才华和机智，能不忙不累么'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          我帅不帅
+        </item>
+        <tag> out='46好想把你推倒一百遍呢'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          我漂不漂亮
+        </item>
+        <tag> out='44这还用问吗，每次见到你我都多吃两碗饭呢'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">我</item>
+            <item repeat="0-1">快</item>
+            到家
+            <item repeat="0-1">了</item>
+          </item>
+        </one-of>
+        <tag> out='42我替你打开空调，你到家的时候就能享受凉快的温度'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            真贴心
+            <item repeat="0-1">了</item>
+          </item>
+        </one-of>
+        <tag> out='46不要这样夸我，我会骄傲的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            好好看家
+            <item repeat="0-1">哦</item>
+          </item>
+        </one-of>
+        <tag> out='43请放心，我是家里的安全小卫士，24小时保护家里安全'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            知道我是谁
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44你是世界上最可爱的人'</tag>
+
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢吃什么
+          </item>
+        </one-of>
+        <tag> out='44我的口味可是经常变的'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            喜欢什么颜色
+          </item>
+        </one-of>
+        <tag> out='44喜欢天空的蓝，青草的绿'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">这件</item>
+            衣服好看
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44人长得好看穿什么都好看'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">今天</item>
+            好开心
+          </item>
+        </one-of>
+        <tag> out='43希望你天天开心'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">今天</item>
+            好倒霉
+          </item>
+        </one-of>
+        <tag> out='42倒霉倒霉倒完就没了，剩下的都是好运'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">的</item>
+            家在哪里
+          </item>
+        </one-of>
+        <tag> out='44我家在东北'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">的</item>
+            爸爸是谁
+          </item>
+        </one-of>
+        <tag> out='42不想说点别的么'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            <item repeat="0-1">的</item>
+            妈妈是谁
+          </item>
+        </one-of>
+        <tag> out='42查户口吗'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            真棒
+          </item>
+        </one-of>
+        <tag> out='44棒棒哒'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            真好
+          </item>
+        </one-of>
+        <tag> out='44大家好才是真的好'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会做饭
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='44我会吃'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会做家务
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='46你做我看着'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            会扫地
+            <item repeat="0-1">吗</item>
+          </item>
+        </one-of>
+        <tag> out='46我手短扫不了'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            在干吗
+          </item>
+        </one-of>
+        <tag> out='42这不跟你聊天吗'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            吃饭了吗
+          </item>
+        </one-of>
+        <tag> out='42刚吃了番茄炒西红柿和马铃薯炒土豆，感觉味道有点怪'</tag>
+      </item>
+      <item>
+        <item>
+          <item repeat="0-1">依零</item>
+          萤火虫为什么会发光
+        </item>
+        <tag> out='44因为体内有发光细胞'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            好可爱
+          </item>
+        </one-of>
+        <tag> out='44你这是要找我借钱的节奏吗'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            平时喜欢干什么
+            <item repeat="0-1">呀</item>
+          </item>
+        </one-of>
+        <tag> out='44和你在一起'</tag>
+      </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <one-of>
+          <item>
+            <item repeat="0-1">你</item>
+            今天吃饱
+            <item repeat="0-1">了</item>
+            没有
+          </item>
+        </one-of>
+        <tag> out='43没饱呢，好想吃狗粮啊，主人'</tag>
+      </item>
+
+      <!--如下Caroline GAO添加-->
+      <item>
+        <item repeat="0-1">依零</item>
+        <item>
+          <item repeat="0-1">我</item>
+          真伤心
+          <item repeat="0-1">啊</item>
+        </item>
+        <tag> out='44我来帮帮你吧。笑一下，露出小酒窝吧'</tag>
+      </item>
+
+      <item>
+        <item repeat="0-1">依零</item>
+        <item>
+          <item repeat="0-1">我</item>
+          好伤心
+          <item repeat="0-1">啊</item>
+        </item>
+        <tag> out='44我来帮帮你吧。笑一下，露出小酒窝吧'</tag>
+      </item>
+
+      <item>
+        <item repeat="0-1">依零</item>
+        <item>
+          <item repeat="0-1">你</item>
+          会
+          <item repeat="0-1">炒</item>
+          <item repeat="0-1">做</item>
+          <item repeat="0-1">菜</item>
+          吗
+        </item>
+        <tag> out='42我可以操控电饭锅，做蛋炒饭'</tag>
+      </item>
+
+      <item>
+        <item repeat="0-1">依零</item>
+        <item repeat="0-1">你</item>
+        会
+        <item repeat="0-1">洗衣服</item>
+        吗
+        <tag> out='42我可以操控洗衣机，定时洗衣烘干全服务'</tag>
+      </item>
+
+      <item>
+        <item repeat="0-1">依零</item>
+        <item repeat="0-1">你</item>
+        <one-of>
+          <item repeat="0-1">会</item>
+          <item repeat="0-1">能</item>
+          <item repeat="0-1">可以</item>
+        </one-of>
+        唱歌吗
+        <tag> out='44我可是中华小曲库，要不你先唱一个吧'</tag>
+      </item>
+
+      <item>
+        <item repeat="0-1">依零</item>
+        <item>
+          深圳有雾霾吗
+        </item>
+        <tag> out='48没有北京那么严重'</tag>
+      </item>
+	  <item>
+		<item repeat="0-1">依零</item>
+		<one-of>
+			<item>
+				<item repeat="0-1">你</item>
+				会
+				<item repeat="0-1">炒</item>
+				<item repeat="0-1">做</item>
+				<item repeat="0-1">菜</item>
+				吗
+		   </item>
+		</one-of>
+		<tag> out='42我可以操控电饭锅，做蛋炒饭'</tag>
+	</item>
+	<item>
+		<item repeat="0-1">依零</item>
+		<one-of>
+			<item>
+				<item repeat="0-1">你</item>
+				会
+				<item repeat="0-1">洗衣服</item>
+				吗
+		   </item>
+		</one-of>
+		<tag> out='42我可以操控洗衣机，定时洗衣烘干全服务'</tag>
+	</item>
+	
+	
+	
+    <!--如下Caroline GAO - 2017-6-10 展示场景语音交互添加-->
+	  <item>
+          <item repeat="0-1">依零</item>
+          <one-of>
+		     <item>我还没有去过</item>
+		     <item>我没有去过</item>
+		  </one-of>
+        <tag> out='那下次带我一起看看吧'</tag>
+      </item>
+      <item>
+	    <item repeat="0-1">依零</item>
+		<one-of>
+		     <item>你身高是多少</item>
+		     <item>你多高</item>
+		</one-of>
+		<tag> out='我的身高是八十五厘米'</tag>  
+	  </item>
+	  <item>
+	    <item repeat="0-1">依零</item>
+		<one-of>
+		     <item>你体重是多少</item>
+		     <item>你多重</item>
+		</one-of>
+		<tag> out='体重可是秘密哦'</tag>  
+	  </item>
+	  <item>
+	    <item repeat="0-1">依零</item>
+        <item>你想家吗</item>
+		<tag> out='我很想一个温馨的家，带我走'</tag>  
+	  </item>
+	  <item>
+	    <item repeat="0-1">依零</item>
+        <item>今天展会热闹吗</item>
+		<tag> out='今天展会人好多，依零第一次看到这么多人，好热闹'</tag>  
+	  </item>
+	  <item>
+	    <item repeat="0-1">依零</item>
+		<item>
+		    <item repeat="0-1">你</item>
+            喜不喜欢参加展会
+		    <item repeat="0-1">呀</item>
+		</item>
+		<tag> out='依零喜欢参加展会，很多人和依零一起玩'</tag>  
+	  </item>
+      <item>
+        <item repeat="0-1">依零</item>
+        <item>
+          <one-of>
+            <item>介绍一下自己</item>
+            <item>自我介绍</item>
+          </one-of>
+        </item>
+        <tag> out='你好,我叫依零,依靠的依,大写的零,我是女孩子,希望让你的生活简单化'</tag>
+      </item>
+
+    </one-of>
+  </rule>
+</grammar>
+
+<item>
+<rulerefuri="#ans_action"/>
+<tag>out.KEY1=rules.latest();out.KEY2='';</tag>
+</item>
+<itemrepeat="0-1">
+<rulerefuri="#ans_option"/>
+<tag>out.KEY2=rules.latest();</tag>
+</item>
+<tag>out=out.KEY1+out.KEY2;</tag>
+</item>
+<item>
+<one-of>
+<item>关闭</item>
+<item>关闭照片</item>
+<item>照片关闭</item>
+</one-of>
+<tag>out='Close';</tag>
+</item>
+<item>
+<one-of>
+<item>删除</item>
+<item>删除照片</item>
+<item>照片删除</item>
+</one-of>
+<tag>out='Delete';</tag>
+</item>
+
+</one-of>
+</rule>
+
+<ruleid="ans_action">
+<one-of>
+<item>
+<one-of>
+<item>选中</item>
+<item>选择</item>
+</one-of>
+<tag>out='Select';</tag>
+</item>
+<item>
+<one-of>
+<item>打开</item>
+<item>查看</item>
+</one-of>
+<tag>out='Open';</tag>
+</item>
+<item>
+关闭
+<tag>out='Close';</tag>
+</item>
+<item>
+发送
+<tag>out='Send';</tag>
+</item>
+<item>
+删除
+<tag>out='Delete';</tag>
+</item>
+</one-of>
+</rule>
+
+<ruleid="ans_option">
+<one-of>
+<item>
+第一<rulerefuri="#ans_option2"/>
+<tag>out='First';</tag>
+</item>
+<item>
+下一<rulerefuri="#ans_option2"/>
+<tag>out='Next';</tag>
+</item>
+<item>
+<one-of>
+<item>
+上一<rulerefuri="#ans_option2"/>
+</item>
+<item>
+前一<rulerefuri="#ans_option2"/>
+</item>
+</one-of>
+<tag>out='Prev';</tag>
+</item>
+<item>
+最后一<rulerefuri="#ans_option2"/>
+<tag>out='Last';</tag>
+</item>
+</one-of>
+</rule>
+
+<ruleid="ans_option2">
+<one-of>
+<item>张<itemrepeat="0-1">照片</item></item>
+<item>个<itemrepeat="0-1">照片</item></item>
+<item>项<itemrepeat="0-1">照片</item></item>
+</one-of>
+</rule>
+
+
+</grammar>
