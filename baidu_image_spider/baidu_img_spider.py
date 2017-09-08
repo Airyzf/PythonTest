@@ -10,7 +10,6 @@ import os
 import re
 import sys
 
-
 str_table = {
     '_z2C$q': ':',
     '_z&e3B': '.',
@@ -58,6 +57,7 @@ char_table = {
 # 也可以直接用字符串作为value
 char_table = {ord(key): ord(value) for key, value in char_table.items()}
 
+
 # 解码图片URL
 def decode(url):
     # 先替换字符串
@@ -66,6 +66,7 @@ def decode(url):
     # 再替换剩下的字符
     return url.translate(char_table)
 
+
 # 生成网址列表
 def buildUrls(word):
     word = urllib.parse.quote(word)
@@ -73,18 +74,22 @@ def buildUrls(word):
     urls = (url.format(word=word, pn=x) for x in itertools.count(start=0, step=60))
     return urls
 
+
 # 解析JSON获取图片URL
 re_url = re.compile(r'"objURL":"(.*?)"')
+
+
 def resolveImgUrl(html):
     imgUrls = [decode(x) for x in re_url.findall(html)]
     return imgUrls
+
 
 def downImg(imgUrl, dirpath, imgName):
     filename = os.path.join(dirpath, imgName)
     try:
         res = requests.get(imgUrl, timeout=15)
         if str(res.status_code)[0] == "4":
-            print(str(res.status_code), ":" , imgUrl)
+            print(str(res.status_code), ":", imgUrl)
             return False
     except Exception as e:
         print(" This is Exception：", imgUrl)
@@ -101,6 +106,7 @@ def mkDir(dirName):
         os.mkdir(dirpath)
     return dirpath
 
+
 if __name__ == '__main__':
     print("Welcome !!! \n Now, it only one word")
     print("Download in results")
@@ -110,14 +116,25 @@ if __name__ == '__main__':
     dirpath = mkDir("tmp_img")
 
     urls = buildUrls(word)
-    index = 0
+    pic_count = 0;
+    index = 1
     for url in urls:
         print("requesting：", url)
         html = requests.get(url, timeout=10).content.decode('utf-8')
         imgUrls = resolveImgUrl(html)
         if len(imgUrls) == 0:  # 没有图片则结束
             break
+        count = 1
+
         for url in imgUrls:
-            if downImg(url, dirpath, str(index) + ".jpg"):
+            if count > 13:
+                count = 1
                 index += 1
-                print("Downloaded %s picture" % index)
+            name = str(index) + "-" + str(count)
+            if downImg(url, dirpath, name + ".jpg"):
+                print("Downloaded %s picture" % name)
+                pic_count += 1
+                count += 1
+                if pic_count >= 131:
+                    print("over")
+                    break
